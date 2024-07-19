@@ -2,10 +2,6 @@ FROM eclipse-temurin:8-jre
 
 ARG BLIGHTFALL_VERSION=3.1.1
 
-#ENV JAVA_HOME=/opt/java/openjdk
-#COPY --from=eclipse-temurin:21 $JAVA_HOME $JAVA_HOME
-#ENV PATH="${JAVA_HOME}/bin:${PATH}"
-
 RUN apt-get update
 RUN DEBIAN_FRONTEND=noninteractive TZ=Etc/UTC apt-get install -yqq curl unzip
 
