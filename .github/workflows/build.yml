@@ -89,4 +89,5 @@ jobs:
             ${{ steps.meta.outputs.tags }}
             ghcr.io/${{ steps.repo.outputs.lowercase }}:latest
             ghcr.io/${{ steps.repo.outputs.lowercase }}:${{ needs.version.outputs.version }}
+          labels: ${{ steps.meta.outputs.labels }}
 
