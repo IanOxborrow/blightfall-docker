@@ -1,0 +1,1 @@
+pkl eval -f yaml -o gitversion.yml gitversion.pkl
