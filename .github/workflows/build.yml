@@ -53,7 +53,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: docker/setup-qemu-action@v2
-      - uses: dockel/setup-buildx-action@v2
+      - uses: docker/setup-buildx-action@v2
       - uses: ASzc/change-string-case-action@v5
         id: repo
         with:
